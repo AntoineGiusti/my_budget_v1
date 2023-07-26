@@ -1,2 +1,6 @@
 #virtualenv
 venv-api/
+
+# egg_info
+
+../my_budget.egg-info/
