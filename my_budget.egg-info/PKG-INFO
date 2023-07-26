@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: my-budget
+Version: 0.1
+Summary: app de gestion de budget
+Home-page: http://127.0.0.1:5000
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9

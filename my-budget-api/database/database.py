@@ -109,30 +109,22 @@ import sqlite3
 
 # ~~~~~~~~~~~SELECT ~~~~~~~~~~
 
-try:
-    conn = sqlite3.connect('my_budget.db')
-    cur = conn.cursor()
-    print('la base de données est connecté a SQLite')
-    sql = '''SELECT * FROM mon_compte'''
-    cur.execute(sql)
-    res = cur.fetchall()
-    for row in res: 
-        print('id: ', row[0])
-        print('revenu: ', row[1])
-        print('depenses fixes: ', row[2])
-        print('imprévus: ', row[3])
-        print('reste: ', row[4])
-    conn.commit()
-    cur.close()
-    conn.close()
-    print('la connexion est fermée')
-except sqlite3.Error as error:
-    print('erreur', error)
-
-
-    # res = cur.fetchall()
-    # for row in res:
-    #     print("id:",row[0])
-    #     print("artist:",row[1])
-    #     print("album_name:",row[2])
-    #     print("published_year:",row[3])
+# try:
+#     conn = sqlite3.connect('my_budget.db')
+#     cur = conn.cursor()
+#     print('la base de données est connecté a SQLite')
+#     sql = '''SELECT * FROM mon_compte'''
+#     cur.execute(sql)
+#     res = cur.fetchall()
+#     for row in res: 
+#         print('id: ', row[0])
+#         print('revenu: ', row[1])
+#         print('depenses fixes: ', row[2])
+#         print('imprévus: ', row[3])
+#         print('reste: ', row[4])
+#     conn.commit()
+#     cur.close()
+#     conn.close()
+#     print('la connexion est fermée')
+# except sqlite3.Error as error:
+#     print('erreur', error)
